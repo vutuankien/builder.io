@@ -1,0 +1,118 @@
+.sub-footer{
+      width: 100%;
+      height: auto;
+      .dev{
+            padding: 40px 0 50px 0;
+            .dev-text{
+                  .sub-title{
+                        // margin-top: 80px;
+                        text-align: center;
+                        @include text-content;
+                        color:#18B6F6;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                  }
+                  .dev-heading{
+                        @include text-heading;
+                        text-align: center;
+                        max-width: 430px;
+                        font-size: 35px;
+                        margin: 10px auto;
+                        color:#fff;
+                  }
+                  .dev-des{
+                        max-width: 530px;
+                        text-align: center;
+                        margin: 10px auto;
+                        @include text-des;
+                        color:#fff;
+                        font-size: 16px;
+                        font-weight: 200;
+                  }
+            }
+            .sectionoflearn{
+                  margin-top: 50px;
+                  display: flex;
+                  justify-content: center;
+                  .learn{
+                        @include primaryButton;
+                        color:#fff;
+                        background-color: #EF6C41;
+                        text-transform: capitalize;
+                  }
+                  .learn:hover{
+                        background-color: #f3480f;
+                        color: #fff;
+                        cursor: pointer;
+                        
+                  }
+            }
+      }
+}
+.builder{
+      height: 500px;
+      margin:50px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .builder-heading{
+            text-align: center;
+            @include text-heading;
+            margin:20px 0;
+      }
+      .builder-des{
+            text-align: center;
+            @include text-des;
+            margin: 20px 0;
+      }
+}
+.create{
+      padding: 60px 0;
+      background-color: #AC7EF4;
+      .create-texts{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap:30px;
+            .create-label{
+                  background-color: #fff;
+                  color:#000;
+                  padding: 5px 5px;
+                  @include text-des;
+                  border-radius: 30px;
+            }
+            .create-heading{
+                  max-width: 487px;
+                  font-family: 'Poppins';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 39px;
+                  line-height: 52px;
+                  text-align: center;
+                  letter-spacing: 1.6px;
+                  color: #000000;
+            }
+            .two-button{
+                  display: flex;
+                  gap: 40px;
+                  .button-1,.button-2{
+                        @include primaryButton;
+                  }
+                  .button-1{
+                        background-color: #EF6C41;
+                        color:#fff;
+                        &:hover{
+                              background-color: #f3480f;
+                        }
+                  }
+                  .button-2{
+                        background-color: #000;
+                        color: #fff;
+                        &:hover{
+                              background-color: #2b2a2a;
+                        }
+                  }
+            }
+      }
+}

@@ -1,0 +1,58 @@
+.tools{
+      margin:50px auto;
+      .tools-text{
+            h3{
+                  @include text-heading;
+                  letter-spacing: 1.5px;
+                  text-align: center;
+                  margin: 20px auto;
+            }
+            p{
+                  @include text-des;
+                  letter-spacing: 1px;
+                  text-align: center;
+                  margin: 20px auto;
+                  font-size: 15px;
+            }
+      }
+      .tools-items{
+            display: grid;
+            gap:30px;
+            grid-template-columns: repeat(4,200px);
+            justify-content: center;
+            img{
+                  padding:15px;
+                  background-color: #ccc;
+                  max-width: 200px;
+                  max-height: 100px;
+                  border-radius: 10px;
+            }
+            img:hover{
+                  background-color: #686666;
+                  scale: 1.2;
+            }
+            .spc-img{
+                  display: grid;
+                  grid-template-columns: repeat(3,200px);
+                  grid-column-start: 2;
+                  gap:30px;
+                  transform: translateX(-100px);
+                  margin-bottom: 50px;
+            }
+            
+      }
+      .btn-primary{
+            display: flex;
+            justify-content: center;
+            button{
+                  @include primaryButton;
+                  color:#fff;
+                  background-color: #EF6C41;
+            }
+            button:hover{
+                  background-color: #ff4000;
+                  color:#000;
+                  scale: 1.2;
+            }
+      }
+}

@@ -1,0 +1,44 @@
+.slider{
+      margin-top: 50px;
+      .slogan{
+            .line1,.line2{
+                  @include text-heading;
+                  color:#000;
+                  max-width: 475px;
+                  img{
+                        margin-left: 15px;
+                  }
+            }
+            .slogan-des{
+                  margin-top: 20px;
+                  p{
+                        max-width: 494px;
+                        @include text-content;
+                        text-align: justify;
+                  }
+            }
+            .red,.black{
+                  @include primaryButton;
+                  margin:36px 25px ;
+            }
+            .red{
+                  background-color: #EF6C41;
+            }
+            .black{
+                  background-color: #000;
+            }
+            .red:hover{
+                  background-color: #e3400a;
+            }
+            .black:hover{
+                  background-color: #3a3838;
+            }
+      }
+      .img-wraper{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns:repeat(6,1fr);
+            column-gap: 10px;
+            row-gap: 15px;
+      }
+}

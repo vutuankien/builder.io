@@ -1,0 +1,110 @@
+.everlane{
+      margin:50px auto;
+      .everlane-icon-top{
+            img{
+                  width: 150px;
+            }
+      }
+      .everlane-text{
+            margin:30px auto;
+            h3{
+                  max-width: 720px;
+                  text-align: center;
+                  @include text-heading;
+                  letter-spacing: 10px;text-transform: capitalize;
+                  
+            }
+            p{
+                  max-width: 760px;
+                  margin:20px  auto;
+                  letter-spacing: 1.5px;
+                  @include text-content;
+                  text-align: left;
+            }
+      }
+      .everlane-icon-bottom{
+            display: grid;
+            grid-template-areas: "forButton forButton forButton forIcon";
+            .section-1,.section-2{
+                  margin:50px auto;
+            }
+            .section-1{
+                  grid-area: forButton;
+                  display: flex;
+                  justify-content: center;
+                  button{
+                        @include primaryButton;
+                        color:#fff;
+                        background-color: $color;
+                  }
+                  button:hover{
+                        background-color: #333;
+                        scale: 1.2;
+                  }
+            }
+            .section-2{
+                  grid-area: forIcon;
+                  display: flex;
+                  justify-content: flex-end;
+                  img{
+                        width: 100px;
+                        height: auto
+                  }
+                  p{
+                        @include text-content;
+                        margin-right: 20px;
+                        line-height: 2
+                  }
+            }
+      }
+}
+.why{
+      margin: 50px 0;
+      .why-text{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h3{
+                  text-align: center;
+                  @include text-heading;
+                  margin: 15px auto;
+            }
+            p{
+                  @include text-des;
+                  max-width: 400px;
+                  text-align: center;
+                  margin: 5px auto;
+            }
+      }
+      .why-smile{
+            img{
+                  width: 100px;
+                  margin-top: 70px;
+            }
+            .space{
+                  width: 100%;
+                  height: 200px;
+                  background-color:transparent;
+            }
+      }
+      .right{
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            margin-bottom: 50px;
+      }
+      .expert{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            button{
+                  @include primaryButton;
+                  background-color: #EF6C41;
+                  color:#fff;
+            }
+            button:hover{
+                  background: #ed511c;
+                  color:#fff;
+            }
+      }
+}

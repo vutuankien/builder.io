@@ -1,0 +1,48 @@
+header{
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      height: 55px;
+      background-color:#E4DDDD;
+      .logo{
+            line-height: 55px;
+            padding:5px 0;
+      }
+      .header-nav{
+            ul{
+                  display: flex;
+                  list-style: none;
+                  li{
+                        a{
+                              display: block;
+                              text-decoration: none;
+                              color:$color;
+                              line-height: 55px;
+                              padding: 0 15px;
+                              font-family: $main-font-family;
+                              font-size: $normal-fontsize;
+                        }
+                  }
+                  a:hover{
+                        background-color: #333;
+                        color:#fff;
+                        cursor: pointer;
+                  }
+            } 
+      }
+      .submit{
+            background-color: #EF6C41;
+            color:#fff;
+            margin:5px 0;
+            padding: 5px 38px;
+            border: none;
+            border-radius: 8px;
+            font-size: $normal-fontsize;
+            font-family: $main-font-family;
+      }
+      .submit:hover{
+            background-color: #f14e4e;
+            cursor: pointer;
+      }
+}

@@ -1,0 +1,72 @@
+.content{
+      margin-top: 100px;
+      .content-heading{
+            margin:10px auto;
+            text-align: center;
+            max-width:360px;
+            @include text-heading;
+            line-height: 1.5;
+      }
+      .content-des{
+            text-align: center;
+            @include text-des;
+            font-size: 11px;
+            margin-top: 20px;
+      }
+      .CMS{    
+            .CMS-item{
+                  display: grid;
+                  // justify-content: space-evenly;
+                  grid-template-columns: 50% 50%;
+                  margin:40px 0;
+                  .cms-text{
+                        transform: translateY(50px);
+                        .cms-text-heading{
+                              @include text-heading;
+                        }
+                        .cms-text-des{
+                              @include text-des;
+                              // max-width: ;
+                        }
+                        .cms-text-content{
+                              @include text-content;
+                              max-width: 392px;
+                              // text-align: justify;
+                              margin-left: 30px;
+                        }
+                  }
+            }
+            .view-butt{
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  margin: 50px 0;
+                  .view{
+                        @include primaryButton;
+                        background-color: $color;
+                  }
+                  .view:hover{
+                        background-color: #272626;
+                        cursor: pointer;
+                  }
+            }  
+      }   
+      .moveFast{
+            margin:100px auto;
+            .moveFast-text{
+                  h3{
+                        @include text-heading;
+                        text-align: center;
+                        letter-spacing: 1.6px;
+                        margin: 20px 0;
+                  }
+                  p{
+                        @include text-des;
+                        max-width: 690px;
+                        height: auto;
+                        text-align: center;
+                        margin:20px auto;
+                  }
+            }
+      }
+}
